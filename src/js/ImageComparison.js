@@ -94,15 +94,15 @@
         });
 
         utils.setMultiEvents(comparison._comparisonSeparator, ['mousedown', 'touchstart'], function () {
-            comparison._comparisonSeparator.classList.add('actived');
+            comparison._comparisonSeparator.classList.add('activated');
         });
 
         utils.setMultiEvents(document.body, ['mouseup', 'touchend'], function () {
-            comparison._comparisonSeparator.classList.remove('actived');
+            comparison._comparisonSeparator.classList.remove('activated');
         });
 
         utils.setMultiEvents(document.body, ['mousemove', 'touchmove'], function () {
-            if (comparison._comparisonSeparator.classList.contains('actived')) {
+            if (comparison._comparisonSeparator.classList.contains('activated')) {
                 comparison._calcPosition(event);
                 if (document.selection) {
                     document.selection.empty();
