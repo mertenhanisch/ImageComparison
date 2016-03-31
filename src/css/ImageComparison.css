@@ -118,7 +118,7 @@
 }
 .comparison-control:after {
   right: -15px;
-  background-position: -12px 0px;
+  background-position: -12px 0;
 }
 .comparison-control__mask {
   width: 50px;
